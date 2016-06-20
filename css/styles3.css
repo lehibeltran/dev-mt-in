@@ -1,0 +1,123 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body{
+    background-color: white;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    height: 8%;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#search {
+    padding-left: 70px;
+}
+
+#ham {
+    padding-right: 70px;
+}
+#search input[type="submit"] {
+    background: url("../images/Icons/Search.svg") no-repeat 0 0;
+    cursor: pointer;
+    border: none;
+    height: 20px;
+    width: 30px;
+}
+
+#ham input[type="button"] {
+    background: url("../images/Icons/Ham.svg") no-repeat 0 0;
+    cursor: pointer;
+    border: none;
+    height: 20px;
+    width: 30px;
+}
+/*input[type="submit"]:hover { background: url('../images/Icons/Search.svg') no-repeat 0 -30px; }*/
+
+.wrapper {
+    width: 80%;
+    height: 75%;
+    margin: 50px 0 0 auto;
+}
+
+.right-pane {
+    width:55%;
+    float:right;
+}
+.left-pane {
+    width:40%;
+    float:left;
+}
+#bottom-nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+    height: 5%;
+    bottom: 0;
+    padding-top: 10px;
+    border-top: 1px solid #d3d3d3;
+}
+
+#bottom-nav .tab {
+    height:90%;
+    width:25%;
+    text-align: center;
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+
+.input {
+    border: 2px solid #d3d3d3;
+    width: 80%;
+    -webkit-box-shadow:
+            inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+            inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    box-shadow:
+            inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+
+.l-btn {
+    width: 80%;
+    background-color: #00FFE9;
+    border: 1px solid #d3d3d3;
+}
+.triangle {
+    background: url('http://i.imgur.com/Yx2Kr8F.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#img{
+    display:none;
+    visibility: hidden;
+}
+/*#canvas {*/
+    /*background-color: rgba(116, 253, 242, 0.39);*/
+/*}*/
+    /*background: url('http://i.imgur.com/Yx2Kr8F.jpg') no-repeat 0 0;*/
+    /*border: none;*/
+/*}*/
+
