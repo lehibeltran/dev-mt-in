@@ -1,0 +1,12 @@
+<div class="left-pane">
+    <div id="userD">
+        <h1>{{ friend.name }}</h1>
+        <h2>{{ friend.tagline }}</h2>
+        <p>{{ friend.bio }}</p>
+    </div>
+    <button class="l-btn" ng-click="addFriend(friend.id)" ng-show="visibleFriend">Add Friend</button>
+</div>
+<div class="right-pane">
+    <canvas id="canvas">
+    </canvas>
+</div>

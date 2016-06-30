@@ -4,21 +4,27 @@ angular.module('socialApp', ['ui.router'])
         $stateProvider
             .state('home', {
                 url: "/",
-                templateUrl: "views/home.html",
-                controller: 'myCanvasCtrl'
+                templateUrl: "views/templates/home.html"
             })
             .state('profile', {
                 url:"/profile",
-                templateUrl: "views/profileView.html"
+                templateUrl: "views/templates/profile.html"
             })
             .state('friendslist', {
-                url:"/friendslist/:findIdx",
-                templateUrl: "views/friendsList.html",
-                controller: 'friendsController'
+                url:"/friendslist/",
+                templateUrl: "views/templates/friendsList.html",
             })
-            .state('findfriends', {
-                url:"/friends",
-                templateUrl: "views/friends.html"
+             .state('findfriends', {
+                 url:"/friends",
+                 templateUrl: "views/templates/searchFriends.html"
+            })
+            .state('profilefriend', {
+                url:"/profilefriend",
+                params: {
+                    friend: null,
+                    visibleF: null
+                },
+                templateUrl: "views/templates/profileFriend.html"
             });
 
         $urlRouterProvider.otherwise("/");
