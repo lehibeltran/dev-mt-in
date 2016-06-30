@@ -4,21 +4,21 @@
       "name": "Lehi Beltran",
       "tagline": "I rock!",
       "profilePic": "https://lh5.googleusercontent.com/-_VGQ9yn5npM/AAAAAAAAAAI/AAAAAAAAAtI/O1QHpqzl3tQ/photo.jpg",
-      "bio": "Following my pasion!.",
+      "bio": "Following my pasion!. I don't have a real strong opinion here, but I do love me some terse syntax. :-) Honestly, I don't think it conveys any information that couldn't easily be inferred from context. It might make more sense to me if we had multiple state-related directives. If multiple people feel strongly about this, I can change it.",
       "id": 1775.8615798273613,
       "friends": []
     },
     {
       "name": "Spiderman",
-      "tagline": "soy el espiderman!",
+      "tagline": "New York is a nice place!",
       "profilePic": "http://img.lum.dolimg.com/v1/images/open-uri20150422-20810-1dbrp13_eb85ac7e.png?region=0%2C0%2C300%2C300",
-      "bio": "New York is a nice place!",
+      "bio": "In the photos from Looper, which you can link through to below, Tom Holland’s Spider-Man is riding on the back of a construction truck. We have no idea what he’s doing, but the backpack suggests he’s just coming from school, or is carrying around some brand new Spidey-gadgets. Check it out.",
       "id": 1248.8154361657355,
       "friends": []
     },
     {
       "name": "Mark Zuckerberg",
-      "tagline": "Me gusta jugar WOW",
+      "tagline": "The Social Networking CEO",
       "profilePic": "http://tctechcrunch2011.files.wordpress.com/2012/09/mark.jpeg",
       "bio": "I am trying to learn some features of node on ubuntu and after I press ctrl+z on my console to stop the server I had (in order to restart server for recognizing my changes on the code), the node still listens to the port (in this case 3000 ).\n\nThen, everytime I have to find the pid by typing",
       "id": 4253.818149084206,
@@ -50,9 +50,9 @@
     },
     {
       "name": "Guzman",
-      "tagline": "Soy gordo y me gusta el Counter",
+      "tagline": "I like cookies",
       "profilePic": "http://i.telegraph.co.uk/multimedia/archive/03544/guzman_3544990b.jpg",
-      "bio": "in the example the extra 300 is used to display both canvas separatly ( not one on top of another) and is doing something extra than just proportionally resize the image canvas. If the link to the example is not working anymore the code provided here may be confusing. Thanks for the answer anyway.",
+      "bio": "in the example the extra 300 is used to display both canvas separately ( not one on top of another) and is doing something extra than just proportionally resize the image canvas. If the link to the example is not working anymore the code provided here may be confusing. Thanks for the answer anyway.",
       "id": 644.4940620566275,
       "friends": []
     },
@@ -66,7 +66,7 @@
     },
     {
       "name": "Shelemsilla",
-      "tagline": "I am toadette",
+      "tagline": "from Mario Brothers!",
       "profilePic": "http://www.mariowiki.com/images/thumb/f/f1/Toadette_-_Mario_Party_10.png/220px-Toadette_-_Mario_Party_10.png",
       "bio": "Identifying mushrooms requires a basic understanding of their macroscopic structure. Most are Basidiomycetes and gilled. Their spores, called basidiospores, are produced on the gills and fall in a fine rain of powder from under the caps as a result. At the microscopic level the basidiospores are shot off basidia and then fall between the gills in the dead air space.",
       "id": 4452.801008273973,
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "name": "El Jacobsin",
+      "name": "Jacobsen",
       "tagline": "Toad always in captivity",
       "profilePic": "https://upload.wikimedia.org/wikipedia/en/d/d1/Toad_3D_Land.png",
       "bio": "A Jacobsin el gusta jugar solo con su mente se mete a su mundo y se hace chora, empieza a hacer ruidos con la boca asi como si fueran explociones y luego hace como cuando se rien los viejitos o el abuji para sus efectos especiales.",
@@ -89,9 +89,9 @@
     },
     {
       "name": "Rutsana",
-      "tagline": "La mama que cocina pollo",
+      "tagline": "Cooking chicken!",
       "profilePic": "data:image/jpeg;base64,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",
-      "bio": "Soy muy guapa y me gusta comer dulces.",
+      "bio": "I don't have a real strong opinion here, but I do love me some terse syntax. :-) Honestly, I don't think it conveys any information that couldn't easily be inferred from context. It might make more sense to me if we had multiple state-related directives. If multiple people feel strongly about this, I can change it.",
       "id": 2332.3002713029196,
       "friends": []
     },
@@ -115,15 +115,15 @@
       "name": "Pingolion",
       "tagline": "soy un pingonsin",
       "profilePic": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Amanita_muscaria_(fly_agaric).JPG",
-      "bio": "El pingonsin es un hongin muy enfadosin qu ele gusta bestiar :))",
+      "bio": "In the photos from Looper, which you can link through to below, Tom Holland’s Spider-Man is riding on the back of a construction truck. We have no idea what he’s doing, but the backpack suggests he’s just coming from school, or is carrying around some brand new Spidey-gadgets. Check it out. El pingonsin es un hongin muy enfadosin qu ele gusta bestiar :))",
       "id": 4471.307061460767,
       "friends": []
     },
     {
-      "name": "Acedo",
-      "tagline": "Toy acedin",
+      "name": "Pidgey",
+      "tagline": "sparrow!",
       "profilePic": "https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688",
-      "bio": "Me gusta mucho comer hamburguresas",
+      "bio": "In the photos from Looper, which you can link through to below, Tom Holland’s Spider-Man is riding on the back of a construction truck. We have no idea what he’s doing, but the backpack suggests he’s just coming from school, or is carrying around some brand new Spidey-gadgets. Check it out.",
       "id": 158.7348653054732,
       "friends": []
     },
@@ -131,7 +131,7 @@
       "name": "Landon Donovan",
       "tagline": "Stay Hungry",
       "profilePic": "http://ussoccerplayers.com/images/2014/01/landon-donovan.jpg",
-      "bio": "soccer is my life",
+      "bio": "In the photos from Looper, which you can link through to below, Tom Holland’s Spider-Man is riding on the back of a construction truck. We have no idea what he’s doing, but the backpack suggests he’s just coming from school, or is carrying around some brand new Spidey-gadgets. Check it out.",
       "id": 1582.7348653054732,
       "friends": []
     },
@@ -160,10 +160,10 @@
       "friends": []
     },
     {
-      "name": "Eliza Abish",
-      "tagline": "Soy guapa!",
+      "name": "Eloida",
+      "tagline": "Strongly Opinionated!",
       "profilePic": "https://pbs.twimg.com/media/A4fuBPVCUAAzRpi.jpg",
-      "bio": "Soy una maestra muy opinionated!",
+      "bio": "In the photos from Looper, which you can link through to below, Tom Holland’s Spider-Man is riding on the back of a construction truck. We have no idea what he’s doing, but the backpack suggests he’s just coming from school, or is carrying around some brand new Spidey-gadgets. Check it out.",
       "id": 4354.350933877097,
       "friends": [
         644.4940620566275,
