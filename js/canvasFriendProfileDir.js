@@ -6,11 +6,11 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
             profileView: '='
         },
         link: function (scope, elem, attrs) {
-            scope.profileView = 'profilefrid'
             scope.visibleFriend = $stateParams.visibleF;
             MainService.getCurrentUser().then(function (response) {
                 if (response) {
                     scope.currentUser = response;
+                    scope.profileView = 'profilefriend';
                     scope.friend = $stateParams.friend;
                     console.log("Canvas CurrentUser Profile pic  " + scope.friend.profilePic);
                     scope.img2src = scope.friend.profilePic;
@@ -34,6 +34,17 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
                         $location.path("/friends");
                     }
                 });
+            };
+
+            scope.deleteFriend = function(friendId){
+                // scope.currentUser.friends.push(friendId);
+                // MainService.addFriends(scope.currentUser).then(function (response){
+                //     console.log(response.status);
+                //     if(response.status === 201){
+                //         alert('Friend Added');
+                //         $location.path("/friends");
+                //     }
+                // });
             };
 
             var drawCanvas = function () {
@@ -111,3 +122,5 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
         }
     }
 });
+
+

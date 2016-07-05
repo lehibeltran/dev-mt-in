@@ -5,6 +5,7 @@
         <p>{{ friend.bio }}</p>
     </div>
     <button class="l-btn" ng-click="addFriend(friend.id)" ng-show="visibleFriend">Add Friend</button>
+    <button class="l-btn" ng-click="deleteFriend(friend.id)" ng-hide="visibleFriend">Delete Friend</button>
 </div>
 <div class="right-pane">
     <canvas id="canvas">

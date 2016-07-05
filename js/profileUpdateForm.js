@@ -8,8 +8,8 @@ angular.module('socialApp').directive('profileUpdateDir', function ($location, M
         link: function (scope, elem, attrs) {
             MainService.getCurrentUser().then(function (response) {
                 if (response) {
-                    scope.profileView = 'profile';
                     scope.currentUser = response;
+                    scope.profileView = 'profile';
                     console.log("there is a profile");
                 } else {
                     $location.path("/");

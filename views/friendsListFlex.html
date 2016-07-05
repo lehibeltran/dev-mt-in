@@ -7,7 +7,7 @@
     </div>
 </div>
 <section class="friends-content">
-    <div class="friends-page" ng-repeat="friend in friends | filter:searchText">
+    <div class="friends-page" ng-repeat="friend in friends">
         <img item="image" ng-src="{{ friend.profilePic }}" alt="{{ friend.name }}" ng-click="loadFriend(friend)"/>
     </div>
 </section>

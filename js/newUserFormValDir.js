@@ -7,9 +7,9 @@ angular.module('socialApp').directive('newFormValDir', function(MainService) {
             profileView: '='
         },
         link: function (scope,elem,attrs) {
-            scope.profileView = 'home';
             MainService.getCurrentUser().then(function(response){
-                { scope.currentUser = response;}
+                scope.currentUser = response;
+                scope.profileView = 'home';
             });
 
             scope.$watch(function (theScope) {

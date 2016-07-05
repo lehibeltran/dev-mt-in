@@ -27,7 +27,7 @@
     {
       "name": "Goku",
       "tagline": "Me gusta tragar",
-      "profilePic": "http://orig01.deviantart.net/dc56/f/2011/201/5/5/songoku_by_say4-d412wpt.png",
+      "profilePic": "http://cdn.playbuzz.com/cdn/d0b128e9-841e-4a54-928c-094123202f85/cd0e575c-440c-45ea-bce8-5950ff1574a5.png",
       "bio": "I am trying to learn some features of node on ubuntu and after I press ctrl+z on my console to stop the server I had (in order to restart server for recognizing my changes on the code), the node still listens to the port (in this case 3000 ).\n\nThen, everytime I have to find the pid by typing",
       "id": 619.8368901616702,
       "friends": []
@@ -54,7 +54,9 @@
       "profilePic": "http://i.telegraph.co.uk/multimedia/archive/03544/guzman_3544990b.jpg",
       "bio": "in the example the extra 300 is used to display both canvas separately ( not one on top of another) and is doing something extra than just proportionally resize the image canvas. If the link to the example is not working anymore the code provided here may be confusing. Thanks for the answer anyway.",
       "id": 644.4940620566275,
-      "friends": []
+      "friends": [
+        1775.8615798273613
+      ]
     },
     {
       "name": "Kat Carr",
@@ -167,7 +169,8 @@
       "id": 4354.350933877097,
       "friends": [
         644.4940620566275,
-        4253.818149084206
+        4253.818149084206,
+        1775.8615798273613
       ]
     }
   ],

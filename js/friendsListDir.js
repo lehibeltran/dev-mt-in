@@ -8,9 +8,9 @@ angular.module('socialApp').directive('friendsListDir', function ($q, $location,
         link: function (scope, elem, attrs) {
             MainService.getCurrentUser().then(function (response) {
                 if (response) {
-                    scope.profileView = 'friendslist';
                     scope.currentUser = response;
                     console.log("there is a profile");
+                    scope.profileView = 'friendslist';
                     scope.loadFriends();
                 } else {
                     $location.path("/");
