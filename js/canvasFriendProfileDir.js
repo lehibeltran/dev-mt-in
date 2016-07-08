@@ -3,13 +3,14 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
         templateUrl: '../views/canvasFriendProfile.html',
         restrict: 'E',
         scope: {
+            currentUser: '=',
             profileView: '='
         },
         link: function (scope, elem, attrs) {
-            scope.visibleFriend = $stateParams.visibleF;
             MainService.getCurrentUser().then(function (response) {
                 if (response) {
                     scope.currentUser = response;
+                    scope.visibleFriend = $stateParams.visibleF;
                     scope.profileView = 'profilefriend';
                     scope.friend = $stateParams.friend;
                     console.log("Canvas CurrentUser Profile pic  " + scope.friend.profilePic);

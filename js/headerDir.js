@@ -109,8 +109,11 @@ angular.module('socialApp').directive('headerDir', function (MainService) {
                         scope.currentUser = response.data[0];
                         console.log("setCurrentUser " + response.data[0].id);
                         MainService.setCurrentUser(scope.currentUser.id);
+                        $('#myModal').modal('hide');
                     } else {
                         alert('user not found');
+                        $('#myModal').modal('show');
+
                     }
                 }).catch(function (err) { //if there is an error
                     return console.log(err);
