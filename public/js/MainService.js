@@ -30,12 +30,13 @@ angular.module('socialApp').service('MainService', function ($http, $q) {
             return console.error(err);
         });
     };
-
     this.setCurrentUser = function (currentUserId) {
+        console.log("setCurrentUser() id: " + currentUserId);
         sessionStorage.setItem('currentUserId', JSON.stringify(currentUserId));
     };
 
     this.removeCurrentUser = function () {
+        console.log("removeCurrentUser()");
         sessionStorage.removeItem('currentUserId');
     };
 
