@@ -61,18 +61,20 @@ body {
 
 .wrapper {
     width: 80%;
-    height: 75%;
+    height: 80%;
     margin: 50px 0 0 auto;
 }
 
 .right-pane {
     width: 60%;
     float: right;
+    margin: 0 auto;
 }
 
 .left-pane {
     width: 40%;
     float: left;
+    margin: 0 auto;
 }
 
 #bottom-nav {
@@ -81,16 +83,15 @@ body {
     align-content: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 75%;
-    height: 5%;
+    width: 80%;
     bottom: 0;
     padding-top: 10px;
     border-top: 1px solid #d3d3d3;
 }
 
 #bottom-nav .tab {
-    height: 90%;
-    width: 25%;
+    height: 100%;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     color: #d3d3d3;
@@ -152,20 +153,25 @@ body {
         width: 100%;
         margin: 5px 10px 0 10px;
     }
+    .l-btn {
+        width: 98%;
+    }
     #userD {
         width: 100%;
     }
     .friends-content {
-        width: 80%;
+        width: 98%;
     }
     .friends-search-input {
         width: 100%;
     }
     .left-pane {
         width: 100%;
+        margin: 0 auto;
     }
     .right-pane {
         width: 100%;
+        margin: 0 auto;
     }
 }
 
