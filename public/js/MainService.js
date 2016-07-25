@@ -24,7 +24,6 @@ angular.module('socialApp').service('MainService', function ($http, $q) {
 
     this.getCurrentUser = function () {
         var currentUserId = JSON.parse(sessionStorage.getItem('currentUserId'));
-        console.log("getCurrentUser");
         return $http.get('http://localhost:3000/users?id=' + currentUserId).then(function (response) {
             return response.data[0];
         }).catch(function (err) { //if there is an error do something console.log err
@@ -33,12 +32,10 @@ angular.module('socialApp').service('MainService', function ($http, $q) {
     };
 
     this.setCurrentUser = function (currentUserId) {
-        console.log("setCurrentUser() id: " + currentUserId);
         sessionStorage.setItem('currentUserId', JSON.stringify(currentUserId));
     };
 
     this.removeCurrentUser = function () {
-        console.log("removeCurrentUser()");
         sessionStorage.removeItem('currentUserId');
     };
 

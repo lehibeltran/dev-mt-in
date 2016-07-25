@@ -11,7 +11,6 @@ angular.module('socialApp').directive('newFormValDir', function(MainService) {
                 scope.currentUser = response;
                 scope.profileView = 'home';
             });
-
             scope.$watch(function (theScope) {
                     return theScope.currentUser;
                 },
@@ -26,7 +25,6 @@ angular.module('socialApp').directive('newFormValDir', function(MainService) {
                     }
                 }
             );
-
             scope.saveUser = function () {
                 if(userValues()) {
                     var userObj = newUser();
@@ -57,7 +55,6 @@ angular.module('socialApp').directive('newFormValDir', function(MainService) {
                     alert("Please enter values for your Profile");
                 }
             };
-
             var userValues = function () {
                 console.log('userValues: '+ scope.name +" "+ scope.tagline +" "+ scope.profilePic +" "+ scope.bio);
                 if (!scope.name || !scope.tagline || !scope.profilePic || !scope.bio) {
@@ -66,7 +63,6 @@ angular.module('socialApp').directive('newFormValDir', function(MainService) {
                     return true;
                 }
             };
-
             function prepLogin(logObj){
                 return{
                     username: logObj.name,
@@ -83,7 +79,6 @@ angular.module('socialApp').directive('newFormValDir', function(MainService) {
                     friends: []
                 }
             }
-
             function clearSaveForm() {
                 scope.name = '';
                 scope.tagline = '';

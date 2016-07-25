@@ -10,7 +10,6 @@ angular.module('socialApp').directive('profileUpdateDir', function ($location, M
                 if (response) {
                     scope.currentUser = response;
                     scope.profileView = 'profile';
-                    console.log("there is a profile");
                 } else {
                     $location.path("/");
                 }
@@ -19,7 +18,6 @@ angular.module('socialApp').directive('profileUpdateDir', function ($location, M
                 if (userValues()) {
                     var userObj = updateU();
                     MainService.updateUser(userObj).then(function (response) {
-                        console.log(response.status);
                         if (response.status === 201) {
                             console.log("Done updating user!");
                         } else {
@@ -33,7 +31,6 @@ angular.module('socialApp').directive('profileUpdateDir', function ($location, M
                     alert("all values are required");
                 }
             };
-
             function updateU() {
                 return {
                     name: scope.name,
@@ -44,16 +41,13 @@ angular.module('socialApp').directive('profileUpdateDir', function ($location, M
                     friends: []
                 }
             }
-
             function userValues() {
-                console.log('userValues: ' + scope.name + " " + scope.tagline + " " + scope.profilePic + " " + scope.bio);
                 if (!scope.name || !scope.tagline || !scope.profilePic || !scope.bio) {
                     return false;
                 } else {
                     return true;
                 }
             }
-
             function clearSaveForm() {
                 scope.name = '';
                 scope.tagline = '';

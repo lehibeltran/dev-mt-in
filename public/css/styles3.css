@@ -3,7 +3,6 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    /*overflow: auto;*/
 }
 
 body {
@@ -19,25 +18,11 @@ body {
     padding-bottom: 20px;
     border-bottom: 1px solid #d3d3d3;
 }
-
-/*#search {*/
-/*height: 100%;*/
-/*display: inline;*/
-/*padding-left: 70px;*/
-/*float: left;*/
-/*}*/
 #title {
     height: 100%;
     width: 66px;
     display: inline;
 }
-
-/*#ham {*/
-/*height: 100%;*/
-/*display: inline;*/
-/*padding-right: 70px;*/
-/*float: right;*/
-/*}*/
 #search input[type="submit"] {
     background: url("../images/Icons/Search.svg") no-repeat 0 0;
     cursor: pointer;
@@ -74,7 +59,6 @@ body {
     width: 100%;
 }
 
-/*input[type="submit"]:hover { background: url('../images/Icons/Search.svg') no-repeat 0 -30px; }*/
 .wrapper {
     width: 80%;
     height: 75%;
@@ -201,5 +185,4 @@ body {
     border: 1px solid #d3d3d3;
     height: 35px;
     width: 20px;
-    /*-webkit-appearance: none;*/
 }

@@ -102,12 +102,9 @@ angular.module('socialApp').directive('headerDir', function (MainService) {
             }
 
             scope.loginUser = function (login) {
-                console.log("loginUser: " + login);
                 MainService.checkUserLogin(login).then(function (response) {
-                    console.log("checkUserLogin: " + response.data[0]);
                     if (response.data.length > 0) {
                         scope.currentUser = response.data[0];
-                        console.log("setCurrentUser " + response.data[0].id);
                         MainService.setCurrentUser(scope.currentUser.id);
                         $('#myModal').modal('hide');
                     } else {

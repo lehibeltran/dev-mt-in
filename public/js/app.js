@@ -11,7 +11,7 @@ angular.module('socialApp', ['ui.router'])
                 templateUrl: "views/templates/profile.html"
             })
             .state('friendslist', {
-                url:"/friendslist/",
+                url:"/friendslist",
                 templateUrl: "views/templates/friendsList.html",
             })
              .state('findfriends', {

@@ -9,7 +9,6 @@ angular.module('socialApp').directive('friendsListDir', function ($q, $location,
             MainService.getCurrentUser().then(function (response) {
                 if (response) {
                     scope.currentUser = response;
-                    console.log("there is a profile");
                     scope.profileView = 'friendslist';
                     scope.loadFriends();
                 } else {
@@ -41,7 +40,6 @@ angular.module('socialApp').directive('friendsListDir', function ($q, $location,
                     }
                 );
             };
-
             scope.loadFriend = function (friendObj){
                 $state.go('profilefriend', {friend: friendObj, visibleF: false});
             };

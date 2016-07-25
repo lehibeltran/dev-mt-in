@@ -11,7 +11,6 @@ angular.module('socialApp').directive('canvasProfileDir', function ($q) {
                     return theScope.currentUser;
                 },
                 function (newValue, oldValue) {
-                    console.log('canvasProfileDir $watch ' + newValue);
                     if (newValue) {
                         console.log("Canvas CurrentUser Profile pic  " + scope.currentUser.profilePic);
                         scope.img2src = scope.currentUser.profilePic;
@@ -113,7 +112,7 @@ angular.module('socialApp').directive('canvasProfileDir', function ($q) {
                 tempCanvas.width = 380;
                 tempCanvas.height = 340;
                 var img = new Image();
-                img.src = "https://lh3.googleusercontent.com/ZWmuJuXIKQ4jWvZniwhVci-VMUliBQbTnQ1kM3nU3tAdfj4R_WgPrL61JlFwjK39Nw=w300";
+                img.src = "../images/SF.png";
                 img.onload = function () {
                     tCtx.drawImage(img, 0, 0, img.width, img.height, 0, 0, 380, 340);
                     defer.resolve(tempCanvas);

@@ -13,13 +13,11 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
                     scope.visibleFriend = $stateParams.visibleF;
                     scope.profileView = 'profilefriend';
                     scope.friend = $stateParams.friend;
-                    console.log("Canvas CurrentUser Profile pic  " + scope.friend.profilePic);
                     scope.img2src = scope.friend.profilePic;
                     tempCanvas2().then(function (response) {
                         scope.pattern2 = response;
                         drawCanvas();
                     });
-                    console.log("there is a profile");
                     // scope.loadFriends();
                 } else {
                     $location.path("/");
@@ -38,14 +36,16 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
             };
 
             scope.deleteFriend = function(friendId){
-                // scope.currentUser.friends.push(friendId);
-                // MainService.addFriends(scope.currentUser).then(function (response){
-                //     console.log(response.status);
-                //     if(response.status === 201){
-                //         alert('Friend Added');
-                //         $location.path("/friends");
-                //     }
-                // });
+                scope.currentUser.friends = scope.currentUser.friends.filter(function(friend){
+                    return friend !== friendId;
+                });
+                MainService.addFriends(scope.currentUser).then(function (response){
+                    console.log(response.status);
+                    if(response.status === 201){
+                        alert('Friend deleted');
+                        $location.path("/friendslist");
+                    }
+                });
             };
 
             var drawCanvas = function () {
@@ -58,9 +58,7 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
                 tempCanvas1().then(function (response) {
-                    //console.log("tempCanvas1 Promise returned " + response);
                     var pattern1 = ctx.createPattern(response, 'no-repeat');
-                    // console.log('scope.pattern2 ' + scope.pattern2);
                     var pattern2 = ctx.createPattern(scope.pattern2, 'no-repeat');
 
                     ctx.save();
@@ -98,7 +96,7 @@ angular.module('socialApp').directive('canvasFriendProfileDir', function ($q, $l
                 tempCanvas.width = 380;
                 tempCanvas.height = 340;
                 var img = new Image();
-                img.src = "https://lh3.googleusercontent.com/ZWmuJuXIKQ4jWvZniwhVci-VMUliBQbTnQ1kM3nU3tAdfj4R_WgPrL61JlFwjK39Nw=w300";
+                img.src = "../images/L12-B.png";
                 img.onload = function () {
                     tCtx.drawImage(img, 0, 0, img.width, img.height, 0, 0, 380, 340);
                     defer.resolve(tempCanvas);
