@@ -71,7 +71,7 @@ body {
 }
 
 .left-pane {
-    width: 30%;
+    width: 40%;
     float: left;
 }
 
@@ -145,30 +145,27 @@ body {
     height: 160px;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 736px) {
     .wrapper {
+        overflow-x: hidden;
+        display: inline-block;
         width: 100%;
-        margin: 50px 40px 0 20px;
+        margin: 5px 10px 0 10px;
     }
-
     #userD {
-        width: 70%;
+        width: 100%;
     }
-
     .friends-content {
         width: 80%;
     }
-
     .friends-search-input {
         width: 100%;
     }
-
     .left-pane {
-        width: 40%;
+        width: 100%;
     }
-
     .right-pane {
-        width: 60%;
+        width: 100%;
     }
 }
 
